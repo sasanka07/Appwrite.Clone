@@ -1,0 +1,76 @@
+.hero container{
+    width: 100%;
+    min-height: 150vh;
+    background-color: 181818;
+    background-position: center;
+} 
+.Product-btns {
+    display: flex;
+    flex-direction: column;    /* Stack the button and message vertically */
+    justify-content: center;   /* Centers horizontally */
+    align-items: center;       /* Centers vertically */
+    min-height: 130vh;         /* Full viewport height for perfect centering */
+    margin: 0;                 /* No extra margin */
+}
+
+/* Button styling */
+.btn {
+    background: linear-gradient(to right, #f70566, #a44747);  /* Vibrant gradient color */
+    color: rgb(255, 255, 255);        /* Text color */
+    padding: 10px 15px;         /* Button padding */
+    font-size: 12px;            /* Font size */
+    border: none;               /* No border */
+    border-radius: 8px;         /* Rounded corners */
+    box-shadow: 4px 4px 10px rgba(238, 234, 234, 0.3);  /* Shadow effect */
+    cursor: pointer;            /* Pointer cursor */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    display: flex;              /* Align text and image in button */
+    align-items: center;        /* Vertical alignment for button content */
+    gap: 10px;                  /* Space between text and image */
+    text-align: center;         /* Center button text */
+}
+
+/* Hover effect for button */
+.btn:hover {
+    box-shadow: 6px 6px 15px rgba(144, 95, 125, 0.4);  /* Increased shadow on hover */
+    transform: translateY(-3px);                  /* Slight lift on hover */
+}
+
+/* Message styling below the button */
+.message {
+    text-align: center;       /* Center the text */
+    font-size: 55px;          /* Set font size */
+    margin-top: 15px;         /* Add space below the button */
+    color: #ffffff;           /* Set text color */
+}
+
+/* Description text styling */
+.description {
+    text-align: center;       /* Center the text */
+    font-size: 18px;          /* Set font size */
+    margin-top: 10px;         /* Space above the text */
+    color: #7e7474;           /* Set text color */
+    padding: 0 20px;          /* Add horizontal padding for better readability */
+}
+hero-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #181818; /* Fixed the color value */
+    background-position: center;
+    overflow: hidden; /* Hide overflow to prevent scrolling on the container */
+}
+
+.slide {
+    min-height: 100vh; /* Each slide takes the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease; /* Smooth transition between slides */
+}
+.description {
+    text-align: center;       /* Center the text */
+    font-size: 1px;          /* Set font size */
+    margin-top: 10px;         /* Space above the text */
+    color: #7e7474;           /* Set text color */
+    padding: 0 20px;          /* Add horizontal padding for better readability */
+}

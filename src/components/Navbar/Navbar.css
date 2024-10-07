@@ -1,0 +1,63 @@
+.Navbar {
+    width: 100%;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(180deg, #352c2c 10%, transparent);
+    z-index: 1;
+    border-bottom: #f1e5e5;
+    scroll-snap-type: start;
+}
+
+.Navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.Navbar-left img {
+    width: 200px;
+}
+
+.Navbar-left ul {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+}
+
+.Navbar-left ul li {
+    cursor: pointer;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+    padding: 5px 10px; /* Add some padding for better hover effect */
+    border-radius: 5px; /* Round corners for hover */
+}
+
+/* Hover effect for li elements excluding the Get Started button */
+.Navbar-left ul li:not(.btn):hover {
+    color: #f70566; /* Change text color on hover */
+    text-shadow: 0px 0px 10px rgba(247, 5, 102, 0.6); /* Glowing text effect */
+}
+
+/* Additional styling for the Get Started button */
+.Navbar-left ul li .btn {
+    background: linear-gradient(to right, #f70566, #a44747); /* Vibrant gradient color */
+    color: rgb(255, 255, 255); /* Text color */
+    padding: 10px 15px; /* Button padding */
+    font-size: 12px; /* Font size */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 4px 4px 10px rgba(238, 234, 234, 0.3); /* Shadow effect */
+    cursor: pointer; /* Pointer cursor */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    display: flex; /* Align text and image in button */
+    align-items: center; /* Vertical alignment for button content */
+    gap: 10px; /* Space between text and image */
+    text-align: center; /* Center button text */
+}
+
+.navbar-hidden {
+    top: -100px; /* Move navbar off-screen when hidden */
+}

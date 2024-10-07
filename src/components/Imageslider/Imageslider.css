@@ -1,0 +1,61 @@
+.image-container {
+    position: relative; /* Allows overlay positioning */
+    width: 100%; /* Full width */
+    height: 200vh; /* Full viewport height */
+    overflow: hidden; /* Prevents overflow */
+}
+
+.background-image {
+    position: absolute; /* Absolute positioning to cover the container */
+    top: 15%; /* Adjust this value to bring the image lower */
+    left: 50%; /* Center the image horizontally */
+    width: 80%; /* Full width */
+    height: 100%; /* Make the height 100% to stretch the image */
+    object-fit: contain; /* Ensure the image covers the container without maintaining aspect ratio */
+    transform: translate(-50%, -20%); /* Center horizontally and slightly lower */
+    z-index: 1; /* Positioned behind the overlay text */
+}
+
+.overlay {
+    position: relative; /* Keeps overlay above the image */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start; /* Align content to the top */
+    height: 100%; /* Full height */
+    color: rgb(255, 255, 255); /* Text color */
+    text-align: center; /* Center align text */
+    z-index: 2; /* Positioned above the image */
+    padding-top: 20%; /* Adjust this padding to control the overlay position */
+}
+
+.text-container {
+    padding: 30px; /* Add padding for text */
+    position: absolute; /* Positioning text absolutely */
+    bottom: 100px; /* Aligns text to the bottom of the container, adjust for spacing */
+    width: 100%; /* Full width */
+}
+
+.title {
+    font-size: 3rem; /* Increase title font size */
+    margin: 10px 10px; /* Add top and bottom margin for spacing */
+}
+
+.description {
+    font-size: 1.1rem; /* Adjust description font size */
+    line-height: 1.5; /* Adjust line height */
+    margin: 10px 0px; /* Add top and bottom margin for spacing */
+    color: aliceblue;
+}
+
+.imageslider-margin {
+    margin-top: 500px; /* Optional: Add a small margin to the top of Imageslider to create space */
+}
+
+/* Horizontal line styling */
+.horizontal-line {
+    width: 100%; /* Set width of the line */
+    margin: 25 auto 20px; /* Center the line with space below */
+    border-top: 2px solid #971414; /* Custom horizontal line */
+    z-index: 2; /* Ensure the line stays above the background image */
+}

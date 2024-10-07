@@ -1,0 +1,162 @@
+/* Container for the sections */
+.programs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    height: 100vh;
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-left: 1px;
+    direction: rtl; /* Move scrollbar to the left side */
+    position: relative;
+    left: 80px; /* Bring the container closer to the left */
+    right: 900px;
+}
+
+/* Individual section styling */
+.program-section {
+    margin: 20px 0;
+    text-align: left; /* Align section text to the left */
+}
+
+.program-title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    transition: color 0.3s; /* Add a transition effect on hover */
+}
+
+.program-title:hover {
+    color: #f70566; /* Change color on hover */
+}
+
+/* Tooltip and hover image container */
+.tooltip-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/* Tooltip styling */
+.tooltip {
+    background-color: #181818;
+    border: 1px solid #181818;
+    border-radius: 5px;
+    padding: 15px 20px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+/* Tooltip title styling */
+.tooltip-title {
+    margin-bottom: 15px;
+    font-size: 200px; /* Increased font size */
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Tooltip head styling */
+.tooltip-head {
+    margin-bottom: 1px;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #ccc;
+    line-height: 1.5; /* Adjust line height to bring lines closer */
+}
+
+/* Paragraph styling inside tooltip */
+.tooltip p {
+    margin-bottom: 12px; 
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.6;
+}
+
+/* Tooltip spacing between lines (br elements) */
+.tooltip br {
+    margin-bottom: 5px; /* Adjust for consistent spacing between lines */
+}
+
+/* Hover image styling */
+.hover-image img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px; /* Space between the tooltip and hover image */
+    margin-right: 350px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for image */
+.hover-image img:hover {
+    transform: scale(1.5); /* Enlarge slightly on hover */
+}
+
+/* Scrollbar styling for WebKit browsers (Chrome, Safari) */
+.programs-container::-webkit-scrollbar {
+    width: 2px; /* Make scrollbar slightly wider */
+}
+
+.programs-container::-webkit-scrollbar-track {
+    background: linear-gradient(to right, #f70566, #a44747); /* Keep track transparent */
+}
+
+.programs-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #f70566, #a44747); /* Gradient thumb */
+    border-radius: 10px; /* Slightly rounded corners */
+}
+
+/* Scrollbar styling for Firefox */
+.programs-container {
+    scrollbar-width: -1px; /* Slim scrollbar */
+    scrollbar-color: transparent; /* Set thumb color to transparent to use background gradient */
+}
+
+.programs-container::-moz-scrollbar-thumb {
+    background: linear-gradient(to right, #f70566, #a44747); /* Gradient for Firefox scrollbar */
+    border-radius: 10px; /* Slightly rounded corners */
+}
+
+/* Move the scrollbar to the left side */
+.programs-container {
+    direction: rtl;
+    right: auto; /* Bring the scrollbar closer to the child elements */
+    left: 100px;
+}
+
+.programs-container > * {
+    direction: ltr; /* Keep child elements left-to-right */
+    position: relative; /* Position relative to the container */
+    left: 0; /* Ensure they stay aligned to the left */
+    margin-left: 0; /* Prevent any unwanted margin shifting on scroll */
+    width: 100%; /* Ensure full width for better alignment */
+}
+
+/* Vertical line styling */
+.vertical-line {
+    width: 1px; /* Slimmer line */
+    background: linear-gradient(to right, #f70566, #a44747); /* Change to gradient */
+    position: absolute;
+    left: 0; /* Bring it closer to the child elements */
+    top: 0;
+    height: 100%;
+    z-index: 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.tooltip span {
+    margin-bottom: 12px; 
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.6;
+}
+ 

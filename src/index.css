@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #181818;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  overflow-y: auto; /* Allow normal scrolling */
+}
+
+.btn {
+  background: linear-gradient(to right, #f70566, #a44747);  /* Vibrant gradient color */
+  color: rgb(255, 255, 255);        /* Text color */
+  padding: 10px 15px;         /* Button padding */
+  font-size: 12px;            /* Font size */
+  border: none;               /* No border */
+  border-radius: 8px;         /* Rounded corners */
+  box-shadow: 4px 4px 10px rgba(238, 234, 234, 0.3);  /* Shadow effect */
+  cursor: pointer;            /* Pointer cursor */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  display: flex;              /* Align text and image in button */
+  align-items: center;        /* Vertical alignment for button content */
+  gap: 10px;                  /* Space between text and image */
+  text-align: center;         /* Center button text */ 
+}
